@@ -1,9 +1,118 @@
 /* Universal Styles */
 
 html {
-    font-size: 18px;
+    font-size: 16px;
     color: #1A7B72;
 }
 
+body {
+    font-family: Helvetica;
+    color: LightGray;
+}
 
-/* Navigation Bar */
+/* HEADER */
+
+header {
+    border: 3px solid black;
+}
+
+.content {
+    border: 3px solid burlywood;
+    height: 4rem;
+    padding: 0 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    border: 3px solid cadetblue;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.logo img {
+    height: 3.2rem;
+}
+
+.logo .left {
+    font-weight: 800;
+    color: Gray;
+}
+
+.logo .right {
+    color: LightGray;
+}
+
+nav {
+    border: 3px solid aquamarine;
+}
+
+nav ul {
+    margin: 0 0;
+}
+
+nav li {
+    border: 3px solid cornflowerblue;
+    display: inline;
+    padding-left: 1rem;
+}
+
+nav li a {
+    color: Gray;
+}
+
+.mobile {
+    display: none;
+}
+
+@media only screen and (max-width: 680px)
+{
+    .logo,
+    .desktop {
+        display: none;
+    }
+
+    .mobile {
+        display: inline-block;
+        width: 100%;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+
+/* MAIN-CONTENT */
+
+.section:nth-child(odd) {
+    height: 20rem;
+    background-color: Grey;
+    text-align: center;
+}
+
+.section:nth-child(even) {
+    height: 20rem;
+    background-color: whitesmoke;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
