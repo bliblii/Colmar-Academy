@@ -10,6 +10,10 @@ body {
     color: LightGray;
 }
 
+a {
+    color: Grey;
+}
+
 /* HEADER */
 
 header {
@@ -59,10 +63,6 @@ nav li {
     padding-left: 1rem;
 }
 
-nav li a {
-    color: Gray;
-}
-
 .mobile {
     display: none;
 }
@@ -84,6 +84,10 @@ nav li a {
         justify-content: space-between;
         align-items: center;
     }
+
+    nav img {
+        height: 2.7rem;
+    }
 }
 
 
@@ -102,17 +106,40 @@ nav li a {
 }
 
 
+/* FOOTER */
 
+footer {
+    color: Grey;
+}
 
+footer div {
+    height: 6rem;
+    background-color: : whitesmoke;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding:  1rem 1.5rem 0 1.5rem;
+    border-top: 2px solid lightGrey;
+}
 
+footer ul li {
+    display: inline;
+    padding-left: 0.8rem;
+}
 
+@media only screen and (max-width: 680px)
+{
+    footer ul {
+        display: none;
+    }
 
+    footer div {
+        padding: 1.5rem 0 0 0;
+        justify-content: center;
+        height: inherit;
+    }
 
-
-
-
-
-
-
-
-
+    footer span {
+        padding: 1rem 0;
+    }
+}
