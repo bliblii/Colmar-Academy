@@ -150,6 +150,10 @@ nav li {
 
 @media only screen and (max-width: 1024px)
 {
+    .section-1 .photo-container {
+        padding: 2rem 1rem;
+    }
+
     .section-1 .sign-up_section {
         margin-right: 1.5rem;
     }
