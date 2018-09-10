@@ -11,26 +11,26 @@ body {
 }
 
 a {
-    color: Grey;
-}
-
-/* HEADER */
-
-header {
-    border: 3px solid black;
+    color: DimGray;
 }
 
 .content {
-    border: 3px solid burlywood;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* HEADER */
+
+header .content {
     height: 4rem;
     padding: 0 1.5rem;
-    display: flex;
     justify-content: space-between;
-    align-items: center;
+    border-bottom: 3px solid lightGrey;
 }
 
 .logo {
-    border: 3px solid cadetblue;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -42,7 +42,7 @@ header {
 
 .logo .left {
     font-weight: 800;
-    color: Gray;
+    color: DimGray;
 }
 
 .logo .right {
@@ -50,7 +50,6 @@ header {
 }
 
 nav {
-    border: 3px solid aquamarine;
 }
 
 nav ul {
@@ -58,7 +57,6 @@ nav ul {
 }
 
 nav li {
-    border: 3px solid cornflowerblue;
     display: inline;
     padding-left: 1rem;
 }
@@ -69,6 +67,10 @@ nav li {
 
 @media only screen and (max-width: 680px)
 {
+    header .content {
+        height: 4rem;
+    }
+
     .logo,
     .desktop {
         display: none;
@@ -94,37 +96,140 @@ nav li {
 /* MAIN-CONTENT */
 
 .section:nth-child(odd) {
-    height: 20rem;
-    background-color: Grey;
+    background-color: LightGrey;
     text-align: center;
 }
 
 .section:nth-child(even) {
-    height: 20rem;
     background-color: whitesmoke;
     text-align: center;
+}
+
+    /* Section 1 */
+.section-1 {
+}
+
+.section-1 .photo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    padding: 2rem 1.5rem;
+}
+
+.section-1 .sign-up_section {
+    margin-right: 10%;
+}
+
+.section-1 .sign-up_section h1 {
+    color: DimGray;
+    font-size: 2.4rem;
+    font-weight:bold;
+    line-height: 1.4;
+    text-align: left;
+}
+
+.section-1 .sign-up_section h2 {
+    color: DimGray;
+    font-size: 1.3rem;
+    font-weight:bold;
+    padding: 1rem 0;
+    line-height: 1.4;
+    text-align: left;
+}
+
+.section-1 .sign-up_section .btn {
+    background-color: DimGray;
+    padding: .5rem 0;
+    font-size: 1.3rem;
+}
+
+.section-1 .sign-up_section .btn a {
+    color: white;
+}
+
+@media only screen and (max-width: 1024px)
+{
+    .section-1 .sign-up_section {
+        margin-right: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 900px)
+{
+    .section-1 .sign-up_section h1 {
+        font-size: 1.9rem;
+        line-height: 1.3;
+    }
+
+    .section-1 .sign-up_section h2 {
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+
+    .section-1 .sign-up_section .btn {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 720px)
+{
+    .section-1 .sign-up_section h1 {
+        font-size: 1.8rem;
+        line-height: 1.1;
+    }
+
+    .section-1 .sign-up_section h2 {
+        font-size: 1rem;
+    }
+
+    .section-1 .sign-up_section .btn {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 680px)
+{
+    .section-1 .content {
+        flex-wrap: wrap;
+    }
+
+    .section-1 .photo-container {
+        width: 100%;
+        padding: 0 0;
+    }
+
+    .section-1 .sign-up_section {
+        width: 100%;
+        margin: 0 auto;
+        padding: 2rem 1rem;
+    }
 }
 
 
 /* FOOTER */
 
 footer {
-    color: Grey;
+    color: DimGray;
 }
 
 footer div {
     height: 6rem;
-    background-color: : whitesmoke;
+    background-color: whitesmoke;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     padding:  1rem 1.5rem 0 1.5rem;
-    border-top: 2px solid lightGrey;
+    border-top: 3px solid lightGrey;
 }
 
 footer ul li {
     display: inline;
     padding-left: 0.8rem;
+}
+
+footer .mobile {
+    display: none;
 }
 
 @media only screen and (max-width: 680px)
@@ -141,5 +246,16 @@ footer ul li {
 
     footer span {
         padding: 1rem 0;
+    }
+
+    footer .desktop {
+        display: none;
+    }
+
+    footer .mobile {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem;
     }
 }
