@@ -383,7 +383,48 @@ header nav li {
 }
 
     /* Section 3 */
+.section-3 {
+    border: 3px solid firebrick;
+    display: flex;
+}
 
+.section-3 .content {
+    border: 3px solid gold;
+    flex-wrap: wrap;
+}
+
+.section-3 .main-title {
+    border: 3px solid deeppink;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-3 .containers {
+    border: 3px solid black;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 4.5rem 2rem 4.5rem;
+}
+
+.section-3 .container {
+    border: 3px solid cadetblue;
+    width: 30%;
+}
+
+.section-3 .photo-container {
+    border: 3px solid yellow;
+}
+
+.section-3 .course-content {
+    border: 3px solid orange;
+}
+
+.section-3 .containers {
+    border: 3px solid black;
+}
 
 
 /* FOOTER */
