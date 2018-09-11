@@ -70,38 +70,38 @@ header .content {
     border-bottom: 3px solid lightGrey;
 }
 
-.logo {
+header .logo {
     display: flex;
     justify-content: flex-start;
     align-items: center;
 }
 
-.logo img {
+header .logo img {
     height: 3.2rem;
 }
 
-.logo .left {
+header .logo .left {
     font-weight: 800;
     color: DimGray;
 }
 
-.logo .right {
+header .logo .right {
     color: LightGray;
 }
 
-nav {
+header nav {
 }
 
-nav ul {
+header nav ul {
     margin: 0 0;
 }
 
-nav li {
+header nav li {
     display: inline;
     padding-left: 1rem;
 }
 
-.mobile {
+ header.mobile {
     display: none;
 }
 
@@ -111,23 +111,23 @@ nav li {
         height: 4rem;
     }
 
-    .logo,
-    .desktop {
+    header .logo,
+    header .desktop {
         display: none;
     }
 
-    .mobile {
+    header .mobile {
         display: inline-block;
         width: 100%;
     }
 
-    nav ul {
+    header nav ul {
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
 
-    nav img {
+    header nav img {
         height: 2.7rem;
     }
 }
@@ -232,6 +232,7 @@ nav li {
 }
 
     /* Section 2 */
+
 .section-2 {
     border: 3px solid firebrick;
     margin: 2rem 0 2rem 1.5rem;
@@ -255,7 +256,6 @@ nav li {
     width: 100%;
     border: 3px solid yellow;
     padding-bottom: 2rem;
-
 }
 
 .section-2 .column-left h2 {
@@ -342,20 +342,15 @@ nav li {
     }
 }
 
-
-/* ne fonctionne pas*/
-/*@media only screen and (max-width: 680px)
+@media only screen and (max-width: 680px)
 {
-    .section-2 {
-        margin: 0 auto;
-    }
-    .section-2 .column-left,
-    .section-2 .desktop {
-        display: none;
+    .section-2 .column-right .desktop,
+    .section-2 .column-left {
+    display: none;
     }
 
-    .section-2 .mobile {
-        display: flex;
+   .section-2 .column-right .mobile {
+    display: flex;
     }
 
     .section-2 .container {
@@ -363,29 +358,33 @@ nav li {
         margin: 0;
     }
 
+    .section-2 {
+        margin: 0 auto;
+    }
+
     .section-2 .column-right .photo-container {
         width: 100%;
         padding: 0;
     }
-
     .section-2 .column-right .photo-container img {
         width: 100%;
     }
-
     .section-2 .column-right .article {
         width: 100%;
     }
-
     .section-2 .column-right {
         width: 100%;
-        margin: 1rem;
+        margin: 1rem 1rem 2rem 1rem;
     }
 
     .section-2 .container .article {
-        padding: 1rem 1rem 4rem 1rem
+        padding: 1rem;
     }
+}
 
-}*/
+    /* Section 3 */
+
+
 
 /* FOOTER */
 
