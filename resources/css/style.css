@@ -8,7 +8,6 @@ html {
 body {
     font-family: Helvetica;
     color: #8c8c8c;
-    border: 3px solid pink;
 }
 
 a,
@@ -580,6 +579,8 @@ header nav li {
 {
     .section-3 {
         display: flex;
+        padding-bottom: 0;
+        border: 3px solid LightGrey;
     }
 
     .section-3 .desktop {
@@ -589,7 +590,7 @@ header nav li {
     .section-3 .content {
         width: 100%;
         margin: 0;
-        padding: 0 1rem;
+        padding: 0 1rem 1rem 1rem;
         background-color: white;
     }
 
@@ -625,8 +626,121 @@ header nav li {
 }
 
     /* Section 4 */
+
+.section-4 .mobile {
+    display: none;
+}
+
 .section-4 {
-    height: 40rem;
+    margin-left: 1.5rem;
+}
+
+.section-4 .content {
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.section-4 .main-title {
+    padding: 2rem 0 1rem 0;;
+    width: 100%;
+    text-align: center;
+}
+
+.section-4 .content .columns {
+    display: flex;
+}
+
+.section-4 .column-left {
+    width: 60%;
+    padding-right: 1.5rem;
+}
+
+.section-4 .column-left .video-container {
+    width: 100%;
+}
+
+.section-4 .column-left h3 {
+    padding-top: 1.5rem;
+    padding-bottom: .5rem;
+}
+
+.section-4 .column-left .text {
+    padding-bottom: 2rem;
+}
+
+.section-4 .column-right {
+    width: 40%;
+    overflow: hidden;
+}
+
+.section-4 .column-right .container-1 {
+    background-color: LightGrey;
+}
+
+.section-4 .column-right .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-4 .column-right .photo-container {
+    width: 35%;
+    padding: 1rem;
+}
+
+.section-4 .column-right .article {
+    width: 65%;
+    padding-right: 1.5rem;
+}
+
+.section-4 .column-right .article .text {
+    padding: .5rem 0;
+}
+
+@media only screen and (max-width: 1222px)
+{
+    .section-4 .column-right .article {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+}
+
+@media only screen and (max-width: 1000px)
+{
+    .section-4 .column-left {
+        padding-right: .8rem;
+    }
+
+    .section-4 .column-right .photo-container {
+        padding: .5rem;
+    }
+
+    .section-4 h3 {
+        font-size: 1rem;
+    }
+
+    .section-4 p {
+        font-size: .9rem;
+    }
+}
+
+@media only screen and (max-width: 680px)
+{
+    .section-4 .content {
+        margin-bottom: rem;
+    }
+
+    .section-4 .desktop {
+        display: none;
+    }
+
+   .section-4 .mobile {
+        display: flex;
+    }
+
+    .section-4 {
+        margin: 0 auto;
+    }
 }
 
 /* FOOTER */
